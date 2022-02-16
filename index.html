@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- ==============================----------------header (77)------------------============================== -->
+    <header>
+        <div class="container">
+            <div class="loginForm text-center">
+                <h1 class="text-capitalize mb-4">Smart Login System</h1>
+
+                <input type="email" class="form-control bg-transparent " placeholder="Enter your email" id="emailInput">
+                <p class="text-danger  d-flex wronginput justify-content-start ms-2" id="wrongLoginEmail"></p>
+
+                <input type="password" class="form-control bg-transparent mt-3" placeholder="Enter your password" id="passwordInput">
+                <p class="text-danger  d-flex wronginput justify-content-start ms-2" id="wrongLoginPassword"></p>
+
+                <p class="text-danger mt-3 d-none wronginput justify-content-center" id="wronginput">incorrect email and password <br> if you don't have an email please sign up below</p>
+                <div id="loginBtn" class="btn btn-outline-info w-100" onclick="checkBtnLogin()">Login</div>
+                <p class="text-white mt-3" >Don’t have an account? <a href="signUp.html" id="signupLink">Signup</a> </p>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
